@@ -18,13 +18,16 @@ gmail:
         color: "#fbe983" # yellow
       - name: to_trash
         color: "#e7e7e7" # grey
+  processing: # NEW SECTION FOR EMAIL PROCESSING SETTINGS
+    query: "is:unread" # Query to fetch emails. Example: "is:unread"
+    sender-label-mapping: # Maps sender emails to specific labels
+      "@ua.jooble.org": "work"
+      "@linkedin.com": "linkedin"
+      "@slack.com": "slack"
+    process-attachments: false
+    max-results: 100 # Maximum number of messages to fetch per API call (for pagination)
 
 
 
-
-#    work: "${WORK:work}"
-#    linkedin: "${LINKEDIN:linkedin}"
-#    slack: "${SLACK:slack}"
-#    trash: "${TRASH:trash}"
 
 
