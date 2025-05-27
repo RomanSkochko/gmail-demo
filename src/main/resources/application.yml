@@ -1,0 +1,30 @@
+# src/main/resources/application.yml
+gmail:
+  application:
+    name: Gmail Demo Project
+  credentials:
+    path: credentials.json
+  tokens:
+    directory: tokens
+  auth:
+    port: 8887
+  labels:
+    definitions:
+      - name: work
+        color: "#42d692" # green
+      - name: linkedin
+        color: "#b6cff5" # light blue
+      - name: slack
+        color: "#fbe983" # yellow
+      - name: to_trash
+        color: "#e7e7e7" # grey
+
+
+
+
+#    work: "${WORK:work}"
+#    linkedin: "${LINKEDIN:linkedin}"
+#    slack: "${SLACK:slack}"
+#    trash: "${TRASH:trash}"
+
+
